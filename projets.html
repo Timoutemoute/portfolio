@@ -12,17 +12,18 @@
         <div class="container nav-flex">
             <span class="logo">✦ Timothé</span>
             <div class="nav-links">
-                <a href="index.html">Accueil</a>
-                <a href="projets.html" class="active">Projets</a>
-                <a href="competences.html">Compétences</a>
+                <a href="index.html">accueil</a>
+                <a href="projets.html" class="active">projets</a>
+                <a href="competences.html">compétences</a>
                 <button id="themeToggle" class="theme-toggle-btn"><i class="fas fa-sun"></i></button>
             </div>
         </div>
     </nav>
 
     <main class="container section-padding">
-        <span class="section-subtitle">GitHub</span>
-        <h2>Mes Dépôts Publics</h2>
+        <span class="section-subtitle">— Open Source</span>
+        <h2>Mes dépôts GitHub</h2>
+        <div id="langBarsContainer"></div>
         <div class="projects-grid" id="projectsGrid">
             <div class="loader-container"><span class="loader"></span></div>
         </div>
@@ -30,7 +31,7 @@
 
     <script src="script.js"></script>
     <script>
-        // Chargement spécifique à la page projet
+        // Charger spécifiquement les données GitHub sur cette page
         window.addEventListener('DOMContentLoaded', loadGitHubData);
     </script>
 </body>
